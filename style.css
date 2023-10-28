@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    width: 1100px;
+    height: 600px;
+    background-color: white;
+    border-radius: 25px;
+}
+.container .imgBox{
+    background: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -530px -265px;
+    width: 50%;
+    height: 100%;
+}
+.hero-img-mobile {
+    display: none;
+  }
+.img-section-center {
+    overflow-x: hidden;
+  }
+  
+  .container-img {
+    display: block;
+    margin-top: 5rem;
+    margin-left: -3rem;
+  }
+  
+  .container-img-2 {
+    display: block;
+    margin-left: -22%;
+    margin-top: -40%;
+  }
+  
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 50%;
+   padding: 5%;
+}
+.text{
+    border-bottom: 1px solid grey;
+}
+button{
+    outline: none;
+    border: none;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button:hover{
+    color: hsl(14,88%,65%);
+}
+.question-avtive button p{
+    font-weight: bolder;
+}
+.question-avtive button img{
+    transform: rotate(180deg);
+}
+.question-avtive .hidden{
+    display: block;
+}
+.hidden {
+    padding-top: 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;     
+     
+    }
+    .container .imgBox{
+        background: url("images/bg-pattern-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: 65%;
+        background-position: 50px -170px;        
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .faq{        
+        margin-bottom: 15%;
+        width: 85%;
+    }
+    button{
+        width: 100%;
+    }
+    .hero-img-mobile {
+        display: block;
+        position: absolute;
+        width: 237px;
+        margin-top: -7rem;
+        margin-left: 4rem;
+      }
+      .img-section {
+        display: none;
+      }
+    
+}
